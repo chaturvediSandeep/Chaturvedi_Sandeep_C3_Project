@@ -73,7 +73,7 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    //<<<<<<<<<<<<<<GetOrderValue>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //<<<<<<<<<<<<<<GetOrderValuePassCase>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     @Test
     public void calling_getOrderValueMethod_should_return_order_value(){
         List<String> selectedMenuItem= new ArrayList<String>();
