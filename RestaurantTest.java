@@ -73,7 +73,15 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
+    //<<<<<<<<<<<<<<GetOrderValue>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void calling_getOrderValueMethod_should_return_order_value(){
+        List<String> selectedMenuItem= new ArrayList<String>();
+        selectedMenuItem.add("Sweet corn soup");
+        selectedMenuItem.add("Vegetable lasagne");
+        int returnedOrderValue = restaurant.getTotalOrderValue(selectedMenuItem);
+        assertThat(returnedOrderValue,greaterThan(0));
+    }
    
 
 }
